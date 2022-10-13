@@ -109,3 +109,20 @@ button#generate {
     text-align: center;
     font-size: 32px;
 }
+
+
+
+.soon-content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.soon-content sp1 {
+    font-size: 40px;
+}
+.soon-content sp2 {
+    font-size: 32px;
+}
