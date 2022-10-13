@@ -3,7 +3,7 @@ const usersElement = document.querySelector('#users');
 const statusElement = document.querySelector('#status');
 
 const params = new URLSearchParams(window.location.search);
-const channel = params.get('channel') || 'thatsenko';
+const channel = params.get('channel') || 'roryau_';
 const client = new tmi.Client({
     connection: {
     secure: true,
