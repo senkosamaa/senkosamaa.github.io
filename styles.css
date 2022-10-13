@@ -48,7 +48,7 @@
 .navbar ul li:hover::after {
     width: 100%;
 }
-.soon-content {
+.content {
     width: 100%;
     position: absolute;
     top: 50%;
@@ -56,9 +56,9 @@
     text-align: center;
     color: #fff;
 }
-.soon-content sp1 {
+.content p1 {
     font-size: 40px;
 }
-.soon-content sp2 {
+.content p2 {
     font-size: 32px;
 }
