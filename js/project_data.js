@@ -1,7 +1,7 @@
 const ProjectData = {
 	"azuki": {
 		title: "Azuki",
-		github: "https://github.com/ottomated/growth-tracker",
+		github: "https://discord.gg/xC7yrgwQMr",
 		description: "Azuki is a <a href=\"https://discordapp.com/\">Discord</a> bot that I built to be used in growing content-creator guilds. This was the first project that I made that I'm still maintaining to this day."
 	},
 	"s_control": {
