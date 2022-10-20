@@ -18,7 +18,7 @@ const ProjectData = {
 	},
 	// OTHERS
 	"pt_game": {
-		title: "??? Game",
+		title: "Eye Of The Storm",
 		github: "https://discord.gg/xC7yrgwQMr",
 		description: "A game that I'm currently developing with some friends, that will most likely release on steam someday in the future"
 	},
