@@ -8,7 +8,7 @@ const ProjectData = {
 	"yue": {
 		title: "Yue",
 		github: "",
-		description: "Yue is the predecessor to Azuki, my previous <a href=\"https://discordapp.com/\">Discord</a> bot. Unlite Azuki, Yue is more focused on the functionality of guilds meaning it has less features revolving around fun and more features for moderation!"
+		description: "Yue is the predecessor to Azuki, my previous <a href=\"https://discordapp.com/\">Discord</a> bot. Unlite Azuki, Yue is more focused on the functionality of guilds meaning it has less features revolving around fun and more features for moderation! This Bot will become public after the PTB build has been completed, tested & debugged"
 	},
 	// HTML,CSS
 	"s_control": {
