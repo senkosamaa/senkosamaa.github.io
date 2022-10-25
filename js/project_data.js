@@ -2,12 +2,12 @@ const ProjectData = {
 	// NODEJS
 	"azuki": {
 		title: "Azuki",
-		github: "",
+		github: "https://github.com/thatonesenko",
 		description: "Azuki is a <a href=\"https://discordapp.com/\">Discord</a> bot that I built to be used in growing content-creator guilds. This project is unfortunatly offline, but will be brought back in a new bot sometime in the near future!"
 	},
 	"yue": {
 		title: "Yue",
-		github: "",
+		github: "https://github.com/thatonesenko",
 		description: "Yue is the predecessor to Azuki, my previous <a href=\"https://discordapp.com/\">Discord</a> bot. Unlite Azuki, Yue is more focused on the functionality of guilds meaning it has less features revolving around fun and more features for moderation! This Bot will become public after the PTB build has been completed, tested & debugged"
 	},
 	// HTML,CSS
@@ -24,7 +24,7 @@ const ProjectData = {
 	// OTHERS
 	"game": {
 		title: "",
-		github: "https://discord.gg/xC7yrgwQMr",
+		github: "https://github.com/thatonesenko",
 		description: "This is a project under development using the Unity Game Engine, there is no details I can release on it... Yet..."
 	},
 };
