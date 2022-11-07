@@ -5,10 +5,10 @@ const ProjectData = {
 		github: "https://github.com/thatonesenko",
 		description: "Azuki is a <a href=\"https://discordapp.com/\">Discord</a> bot that I built to be used in growing content-creator guilds. This project is unfortunatly offline, but will be brought back in a new bot sometime in the near future!"
 	},
-	"yue": {
-		title: "Yue",
-		github: "https://github.com/thatonesenko/Yue",
-		description: "Yue is the predecessor to Azuki, my previous <a href=\"https://discordapp.com/\">Discord</a> bot. Unlite Azuki, Yue is more focused on the functionality of guilds meaning it has less features revolving around fun and more features for moderation! This Bot will become public after the PTB build has been completed, tested & debugged"
+	"ao": {
+		title: "Ao",
+		github: "https://github.com/thatonesenko/",
+		description: "Ao is the predecessor to Azuki, my previous <a href=\"https://discordapp.com/\">Discord</a> bot. Unlite Azuki, Ao is more focused on the functionality of guilds meaning it has less features revolving around fun and more features for moderation! This Bot will become public after the PTB build has been completed, tested & debugged"
 	},
 	// HTML,CSS
 	"s_control": {
