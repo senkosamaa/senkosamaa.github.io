@@ -7,7 +7,7 @@ const ProjectData = {
 	},
 	"ao": {
 		title: "Ao",
-		github: "https://github.com/thatonesenko/",
+		github: "https://twitter.com/thatonesenko/",
 		description: "Ao is the predecessor to Azuki, my previous <a href=\"https://discordapp.com/\">Discord</a> bot. Unlite Azuki, Ao is more focused on the functionality of guilds meaning it has less features revolving around fun and more features for moderation! This Bot will become public after the PTB build has been completed, tested & debugged"
 	},
 	// HTML,CSS
