@@ -1,116 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>ThatSenko</title>
-	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-	<script src="js/trianglify.min.js"></script>
-	<script src="encom-globe.min.js"></script>
-	<script src="grid.js"></script>
-	<script src="data.js"></script>
-	<script src="js/project_data.js"></script>
-
-	<!-- Scrollbar -->
-	<link rel="stylesheet" href="css/perfect-scrollbar.css">
-	<script src="js/perfect-scrollbar.min.js" type="text/javascript"></script>
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112279351-2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-		gtag('config', 'UA-112279351-2');
-	</script>
-</head>
-
-<body>
-	<h1 id="intro">{ }</h1>
-	<div id="main">
-		<h2>I'm a <span id="age"></span> year-old developer</h2>
-		<h2>who uses
-			<span class="lang-button" style="color:#90c53f;" data-panel="nodejs">Node.JS<span class="underline"
-					style="background-color:#90c53f;"></span></span>,
-			<span class="lang-button" style="color: #f16529;" data-panel="htmlcss">HTML/CSS/JS<span class="underline"
-					style="background-color:#f16529;"></span></span>, and
-			<span class="lang-button" style="color: #ffdd48;" data-panel="others">others<span class="underline"
-					style="background-color:#ffdd48;"></span></span>.
-		</h2>
-		<svg id="linedown">
-			<line x1=0 y1=0 x2=0 y2=100>
-		</svg>
-		<span id="langhint">(click to view details)</span>
-		<svg id="rect">
-			<path id="rectleft" />
-			<path id="rectright" />
-		</svg>
-		<div id="nodejs" class="lang-panel">
-			<h2><a href="https://nodejs.org/en/" target="_blank">Node.JS</a></h2>
-			<h3 class="lang-desc">Node is my language of choice for both <span>quick scripts</span> and for <span>web
-					servers</span> using <a href="https://expressjs.com/" target="_blank">Express</a>. I've been using
-				it for about <span>2 years</span> now, and I'd call myself <span>proficient</span>.</h3>
-			<div class="projects node" data-cat="nodejs">
-				<div data-proj="azuki" class="proj" style="background-image: url(img/azuki.png)">
-					<h3>Azuki</h3>
-				</div>
-				<div data-proj="ao" class="proj" style="background-image: url(img/ao.png)">
-					<h3>Ao</h3>
-				</div>
-			</div>
-		</div>
-		<div id="htmlcss" class="lang-panel">
-			<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML/CSS/JS</a></h2>
-			<h3 class="lang-desc">My first venture into programming, when I was <span>11 years old</span>, was an
-				incredibly awful website that was entirely HTML and a few inline styles. I've gotten just a <i>bit</i>
-				better since then &ndash; I'm still learning design principles,
-				but I'm <span>proficient</span> at this stack.
-			</h3>
-			<div class="projects htmlcss" data-cat="htmlcss">
-				<div data-proj="portfolio" class="proj" style="background-image: url(img/shamiko-gif.gif)">
-					<h3>Portfolio</h3>
-				</div>
-				<div data-proj="s_control" class="proj" style="background-image: url(img/senko-control.png)">
-					<h3>Senko Control Panel</h3>
-				</div>
-			</div>
-		</div>
-		<div id="others" class="lang-panel">
-			<h2>Other skills</h2>
-			<h3 class="lang-desc">I've also worked in <span>Java</span>, <span>C++</span>, <span>C#</span> and a bit of <span>Python</span>.</h3>
-			<div class="projects others" data-cat="others">
-				<div data-proj="game" class="proj" style="background-image: url(img/WIP.png)">
-					<h3></h3>
-				</div>
-			</div>
-		</div>
-		<div id="details">
-			<h2>Check out my <a href="https://github.com/thatonesenko" class="d" target="_blank"
-					style="color:#949494;">GitHub<span class="underline" style="background-color:#949494;"></span></a></a>.</h2>
-			<br>
-			<h2 id="lastseen"></h2>
-			<h2>Want to make something together? <a href="mailto:thatonesenko@gmail.com" class="d" target="_blank"
-					style="color:#949494;">Email me!<span class="underline"
-						style="background-color:#949494;"></span></a></h2>
-		</div>
-		<div id="modal">
-			<h2></h2>
-			<p></p>
-			<div>
-				<a target="_blank"><img src="img/git-logo.png"></a>
-			</div>
-			<div class="close">X</div>
-		</div>
-	</div>
-	<script type="text/javascript" src="js/intro.js"></script>
-	<script type="text/javascript" src="js/age.js"></script>
-	<script type="text/javascript" src="js/langs.js"></script>
-	<script type="text/javascript" src="js/seen.js"></script>
-	<script type="text/javascript" src="js/globe.js"></script>
-</body>
-
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>ThatSenko</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    </head>
+    <body>
+        <div id="bgc">
+            <video loop="" muted="" autoplay="" poster="assets/bg.png">
+                <source src="/assets/neko.mp4" type="video/mp4">
+                <source src="/assets/neko.webm" type="video/webm">
+            </video>
+        </div>
+        <div class="container">
+            <div>
+                <h1 class="title">
+                    ThatSenko
+                </h1>
+            </div>
+            <div class="content">
+                <br />
+                <br />
+                <sp1>A <span id="age"></span> year old idiot that does coding</sp1>
+                <br />
+                <sp2>and specialises in WebApp development.</sp2>
+                <br />
+                <sp3>From the country of New Zealand.</sp3>
+                <br />
+                <br />
+            </div>
+            <a class="icons">
+                <a class="icon" href="https://vrchat.com/home/user/usr_3c8cdd4d-2141-45af-9df4-54fc1d47e9d8">
+                    <svg width="37" height="37" viewBox="0 0 37 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="svgIcon">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M36.5,27.8c-0.2,1.7-1.4,3-3,3.4c-0.2,0-0.4,0.1-0.6,0.1c0,0,0,0.1,0,0.1c0,2,0,3.9,0,5.9c0,0.3,0,0.5,0,0.8 c-0.1,0.7-0.5,1.2-1.2,1.5c-0.1,0.1-0.3,0.1-0.4,0.1c-0.2,0-0.3,0-0.5,0c-0.9-0.2-1.5-0.7-2-1.4c-1.8-2.3-3.5-4.6-5.3-6.8 c-0.1-0.1-0.2-0.1-0.3-0.1c-2.4,0-4.9,0-7.3,0c-2.7,0-5.5,0-8.2,0c-2,0-3.6-1.3-4-3.2c0-0.2-0.1-0.3-0.1-0.5c0-5.9,0-11.8,0-17.7 c0,0,0-0.1,0-0.1c0.2-1.5,1.1-2.6,2.5-3.2c0.3-0.1,0.7-0.2,1.1-0.3c8.6,0,17.2,0,25.7,0c0,0,0.1,0,0.1,0c1.6,0.2,3,1.4,3.4,3 c0.1,0.2,0.1,0.4,0.1,0.6c0,5.9,0,11.8,0,17.7C36.5,27.7,36.5,27.7,36.5,27.8z M35,10.4c0,0,0-0.1,0-0.1c0-1.1-0.8-2.1-1.9-2.4 c-0.4-0.1-0.8-0.1-1.2-0.1c-8.1,0-16.2,0-24.3,0C6.1,7.8,5,8.9,5,10.5C5,16,5,21.6,5,27.2c0,1.5,1.1,2.6,2.6,2.6c1.4,0,2.8,0,4.2,0 c4,0,8,0,12,0c0.1,0,0.2,0,0.3,0.1c1.7,2.2,3.4,4.3,5,6.5c0.3,0.4,0.6,0.8,0.9,1.1c0.2,0.2,0.4,0.4,0.6,0.5c0.3,0.2,0.5,0.1,0.6-0.3 c0-0.1,0-0.3,0-0.4c0-2.4,0-4.9,0-7.3c0-0.1,0-0.2,0-0.3c0.3,0,0.5,0,0.7,0c0.3,0,0.6,0,1-0.1c1.2-0.3,2-1.3,2-2.5 C35,21.6,35,16,35,10.4z M28.3,25.6c-0.4,0-0.6-0.3-0.8-0.6c-0.6-1.2-1.3-2.5-1.9-3.7c-0.2-0.4-0.4-0.8-0.6-1.2 c0-0.1-0.1-0.1-0.2-0.1c-0.5,0-0.9,0-1.5,0c0,0.1,0,0.2,0,0.2c0,1.5,0,3,0,4.4c0,0.4-0.2,0.6-0.5,0.7c-0.5,0.2-1,0.2-1.4,0 C21.2,25.2,21,25,21,24.7c0-3.9,0-7.8,0-11.7c0-0.6,0.4-0.9,0.9-0.9c1.4,0,2.8,0,4.2,0c0.6,0,1.2,0.2,1.8,0.4c0.9,0.4,1.5,1.1,1.8,2 c0.3,1,0.3,2,0,3c-0.3,1-1,1.7-2,2c-0.1,0-0.1,0-0.2,0.1c0,0,0,0,0,0c0,0.1,0.1,0.1,0.1,0.2c0.8,1.4,1.6,2.9,2.3,4.3 c0.1,0.2,0.1,0.3,0,0.5C29.7,25.1,28.9,25.7,28.3,25.6z M27.4,15.7c-0.1-0.8-0.6-1.4-1.4-1.5c-0.8-0.1-1.7,0-2.5,0c0,0,0,0,0,0 c0,1.3,0,2.6,0,3.9c0,0,0,0,0.1,0c0.8,0,1.6,0,2.4,0c0.8,0,1.3-0.5,1.5-1.3C27.4,16.4,27.4,16,27.4,15.7z M16,24.8 c-0.1,0.3-0.3,0.5-0.6,0.7c-0.6,0.3-1.3,0.3-1.9,0c-0.3-0.1-0.5-0.4-0.7-0.7c-1.2-3.8-2.3-7.6-3.5-11.3c-0.1-0.4,0-0.7,0.3-1 c0.4-0.3,0.8-0.4,1.3-0.3c0.3,0,0.5,0.2,0.6,0.5c0.9,3.2,1.8,6.5,2.7,9.7c0,0.1,0,0.1,0,0.2c0,0,0,0,0,0c0.1-0.5,0.3-1,0.4-1.6 c0.8-2.7,1.5-5.5,2.3-8.2c0.1-0.3,0.3-0.5,0.7-0.6c0.6,0,1,0.1,1.5,0.5c0.2,0.2,0.3,0.4,0.2,0.7C18.3,17.1,17.2,21,16,24.8z"></path>
+                    </svg>
+                </a>
+                <a class="icon" id="medIcon" href="https://twitter.com/thatonesenko">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <title></title>
+                        <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path>
+                    </svg>
+                </a>
+                <a class="icon" id="medIcon" href="https://steamcommunity.com/id/thatsenko">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <title></title>
+                        <path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"></path>
+                    </svg>
+                </a>
+            </a>
+        </div>
+        <div class="copyright">
+            <div class="copyright-text">
+                <sp1>©ThatSenko 2022</sp1>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/age.js"></script>
+    </body>
+    </html>
